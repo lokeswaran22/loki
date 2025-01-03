@@ -23,4 +23,4 @@ This project features a **responsive profile card** created with **HTML** and **
 ## 🚀 Getting Started
 1. Clone this repository:
    ```bash
-   git clone https://github.com/lokeswaran22/loki.git
+   git clone https://github.com/lokeswaran22/profilecard.git
