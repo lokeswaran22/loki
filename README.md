@@ -3,7 +3,7 @@ A sleek and responsive profile card built using HTML and CSS, showcasing a minim
 
 # Profile Card Project
 
-[https://lokiprofile.netlify.app/]
+LINK:[https://lokiprofile.netlify.app/]
 
 This project features a **responsive profile card** created with **HTML** and **CSS**. It showcases a clean and modern design, perfect for personal or professional use in portfolios, blogs, or other web applications.
 
