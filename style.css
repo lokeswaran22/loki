@@ -1,0 +1,179 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin-top: 100px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Optional background gradients */
+    /* background: radial-gradient(circle, #434443, #f4f5f4, #4b4c4c); */
+    /* background: conic-gradient(#ff7e5f, #feb47b, #86a8e7, #b3ffab); */
+}
+
+.background-image {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 104%;
+    object-fit: cover;
+    /* filter: contrast(150%); */
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.profile-card {
+    max-width: 370px;
+    width: 100%;
+    background-color: aliceblue;
+    box-shadow: 20px 15px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    /* Optional animation */
+    /* transition-duration: 3s; */
+}
+
+.profile-card::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 40%;
+    width: 100%;
+    /* background: radial-gradient(circle, #8af391, #f4f5f4, #8af391); */
+    /* background: radial-gradient(circle, #8aabf3, #f4f5f4, #8aabf3); */
+    background: url(./asserts/image/pcblack.png);
+    border-radius: 24px 24px 0 0;
+}
+
+.gallery {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: crimson;
+    padding: 3px;
+    margin-bottom: 10px;
+    margin-top: 60px;
+}
+
+.gallery .qwerty {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 3px solid cornsilk;
+    transition: transform 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.gallery .qwerty:hover {
+    transform: rotateY(180deg);
+    border-radius: 50%;
+}
+
+.profile-card .text-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+}
+
+.name {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.work {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.profile-card .social {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.social .link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background-color: springgreen;
+    margin: 0 8px;
+    height: 40px;
+    width: 50px;
+    border-radius: 50px;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social .link:hover {
+    transform: scale(1.1);
+}
+
+.back-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.portfolio-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: navy;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 24px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.portfolio-link:hover {
+    background-color: brown;
+    transform: scale(1.1);
+}
+
+.portfolio-link i {
+    font-size: 14px;
+}
+
+
+.profile-card .analytics {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.analytics .data {
+    display: flex;
+    align-items: center;
+    color: #333;
+    padding: 0 20px;
+    border-right: 2px solid #e7e7e7;
+}
+
+.data i {
+    font-size: 18px;
+    margin-right: 6px;
+}
+
+.data:last-child {
+    border-right: none;
+}
